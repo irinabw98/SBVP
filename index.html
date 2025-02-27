@@ -33,34 +33,6 @@
     <div class="section-container">
       <iframe id="tablero" src="https://lookerstudio.google.com/embed/reporting/f9390cab-6879-443f-852f-186131e42821" allowfullscreen></iframe>
     </div>
-
-    <script>
-        function ajustarIframe() {
-            let iframe = document.getElementById("tablero");
-            let screenWidth = window.innerWidth;
-            let screenHeight = window.innerHeight;
-
-            // Tamaño ideal del tablero (ajústalo si es necesario)
-            let tableroAncho = 2500; // Ancho del tablero original
-            let tableroAlto = 1900;  // Alto del tablero original
-
-            // Escalar el tablero si es más grande que la pantalla
-            let escalaAncho = screenWidth / tableroAncho;
-            let escalaAlto = screenHeight / tableroAlto;
-            let escalaFinal = Math.min(escalaAncho, escalaAlto, 1); // No permitir que sea mayor a 100%
-
-            // Aplicar tamaño dinámico
-            iframe.style.width = `${tableroAncho * escalaFinal}px`;
-            iframe.style.height = `${tableroAlto * escalaFinal}px`;
-            iframe.style.transform = `scale(${escalaFinal})`;
-            iframe.style.transformOrigin = "top center";
-        }
-
-        // Ajustar cuando la página carga y al redimensionar la ventana
-        window.onload = ajustarIframe;
-        window.onresize = ajustarIframe;
-    </script>
-
 </body>
 </html>
 
