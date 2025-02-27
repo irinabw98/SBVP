@@ -78,7 +78,7 @@ body::after {
 
 .navbar {
     background-color: #00274D; /* Barra azul oscuro */
-    padding: 3px 0; /* Barra azul más angosta */
+    padding: 1px 0; /* Barra azul más angosta */
     text-align: center;
 }
 
@@ -95,7 +95,7 @@ body::after {
 .nav-tabs a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px; /* Tamaño moderado de las pestañas */
+    padding: 2px 2px; /* Tamaño moderado de las pestañas */
     background-color: #003366; /* Fondo de las pestañas */
     border-radius: 5px; /* Bordes más suaves */
     font-size: 12px; /* Tamaño de la fuente ajustado */
