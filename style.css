@@ -1,7 +1,7 @@
 header {
     background-color: white; /* Fondo blanco */
     padding: 10px 20px;
-    border-bottom: 10px solid #00274D; /* Línea azul oscuro */
+    border-bottom: 5px solid #00274D; /* Línea azul oscuro */
 }
 
 .header-container {
@@ -12,7 +12,7 @@ header {
 
 .logo-left,
 .logo-right {
-    width: 80px; /* Tamaño ajustable */
+    width: 10px; /* Tamaño ajustable */
     height: auto;
     margin: 10px;
 }
