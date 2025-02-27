@@ -14,7 +14,7 @@ header {
 .logo-right {
     width: 80px; /* Tamaño más pequeño de los logos */
     height: auto;
-    margin: 5px;
+    margin: 20px;
 }
 
 .title-container {
@@ -24,7 +24,7 @@ header {
 
 /* Estilo del título */
 h1 {
-    font-size: 20px; /* Reducir tamaño del título */
+    font-size: 26px; /* Reducir tamaño del título */
     font-weight: bold;
     color: #00274D; /* Azul oscuro */
     margin: 3px 0;
@@ -97,10 +97,10 @@ body::after {
 .nav-tabs a {
     text-decoration: none;
     color: white;
-    padding: 10px 20px; /* Tamaño moderado de las pestañas */
+    padding: 5px 10px; /* Tamaño moderado de las pestañas */
     background-color: #003366; /* Fondo de las pestañas */
     border-radius: 5px; /* Bordes más suaves */
-    font-size: 16px; /* Tamaño de la fuente ajustado */
+    font-size: 12px; /* Tamaño de la fuente ajustado */
     transition: 0.3s;
     border: 2px solid #00274D; /* Borde alrededor de cada pestaña */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para darle un toque prolijo */
@@ -113,5 +113,5 @@ body::after {
 
 .content {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 5px;
 }
