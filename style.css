@@ -12,9 +12,9 @@ header {
 
 .logo-left,
 .logo-right {
-    width: 200px; /* Tamaño ajustable */
+    width: 80px; /* Tamaño ajustable */
     height: auto;
-    margin: 30px;
+    margin: 10px;
 }
 
 .title-container {
@@ -24,15 +24,15 @@ header {
 
 /* Estilo del título */
 h1 {
-    font-size: 46px;
+    font-size: 30px;
     font-weight: bold;
     color: #00274D; /* Azul oscuro */
-    margin: 5px 0;
+    margin: 3px 0;
 }
 
 /* Estilo de la descripción */
 .descripcion {
-    font-size: 24px;
+    font-size: 14px;
     color: #555;
     margin: 0;
 }
