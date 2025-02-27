@@ -1,6 +1,6 @@
 header {
     background-color: white; /* Fondo blanco */
-    padding: 10px 20px;
+    padding: 5px 15px; /* Hacer más pequeña la barra blanca */
     border-bottom: 5px solid #00274D; /* Línea azul oscuro */
 }
 
@@ -12,9 +12,9 @@ header {
 
 .logo-left,
 .logo-right {
-    width: 10px; /* Tamaño ajustable */
+    width: 50px; /* Reducir tamaño de los logos */
     height: auto;
-    margin: 10px;
+    margin: 5px;
 }
 
 .title-container {
@@ -24,7 +24,7 @@ header {
 
 /* Estilo del título */
 h1 {
-    font-size: 30px;
+    font-size: 24px; /* Reducir tamaño del título */
     font-weight: bold;
     color: #00274D; /* Azul oscuro */
     margin: 3px 0;
@@ -32,7 +32,7 @@ h1 {
 
 /* Estilo de la descripción */
 .descripcion {
-    font-size: 14px;
+    font-size: 12px; /* Reducir tamaño de la descripción */
     color: #555;
     margin: 0;
 }
@@ -64,7 +64,7 @@ body::after {
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 30px; /* Reducir el tamaño del título */
     font-weight: bold;
     color: #00274D; /* Azul oscuro */
     margin-bottom: 0px; /* Espacio entre el título y la caja */
@@ -80,7 +80,7 @@ body::after {
 
 .navbar {
     background-color: #00274D; /* Barra azul oscuro */
-    padding: 15px 0;
+    padding: 10px 0; /* Hacer más pequeña la barra de navegación */
     text-align: center;
 }
 
@@ -91,17 +91,18 @@ body::after {
 }
 
 .nav-tabs li {
-    margin: 0 20px;
+    margin: 0 10px; /* Ajustar el espacio entre las pestañas */
 }
 
 .nav-tabs a {
     text-decoration: none;
     color: white;
-    padding: 30px 50px; /* Aumentar tamaño de las pestañas */
+    padding: 15px 25px; /* Reducir el tamaño de las pestañas */
     background-color: #003366; /* Fondo de las pestañas */
     border-radius: 3px; /* Bordes redondeados */
-    font-size: 30px; /* Aumentar el tamaño de la fuente */
+    font-size: 20px; /* Reducir el tamaño de la fuente */
     transition: 0.3s;
+    border: 2px solid #00274D; /* Agregar borde alrededor de cada pestaña */
 }
 
 .nav-tabs a:hover {
@@ -112,3 +113,4 @@ body::after {
     text-align: center;
     padding: 50px 20px;
 }
+
