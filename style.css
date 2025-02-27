@@ -1,6 +1,6 @@
 header {
     background-color: white; /* Fondo blanco */
-    padding: 5px 15px; /* Hacer más pequeña la barra blanca */
+    padding: 5px 15px; /* Barra blanca más estrecha */
     border-bottom: 5px solid #00274D; /* Línea azul oscuro */
 }
 
@@ -12,7 +12,7 @@ header {
 
 .logo-left,
 .logo-right {
-    width: 150px; /* Reducir tamaño de los logos */
+    width: 120px; /* Tamaño de los logos ajustado a un tamaño medio */
     height: auto;
     margin: 5px;
 }
@@ -80,7 +80,7 @@ body::after {
 
 .navbar {
     background-color: #00274D; /* Barra azul oscuro */
-    padding: 10px 0; /* Hacer más pequeña la barra de navegación */
+    padding: 5px 0; /* Barra azul más angosta */
     text-align: center;
 }
 
@@ -97,20 +97,21 @@ body::after {
 .nav-tabs a {
     text-decoration: none;
     color: white;
-    padding: 15px 25px; /* Reducir el tamaño de las pestañas */
+    padding: 12px 25px; /* Tamaño moderado de las pestañas */
     background-color: #003366; /* Fondo de las pestañas */
-    border-radius: 3px; /* Bordes redondeados */
-    font-size: 20px; /* Reducir el tamaño de la fuente */
+    border-radius: 5px; /* Bordes más suaves */
+    font-size: 18px; /* Tamaño de la fuente ajustado */
     transition: 0.3s;
-    border: 2px solid #00274D; /* Agregar borde alrededor de cada pestaña */
+    border: 2px solid #00274D; /* Borde alrededor de cada pestaña */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para darle un toque prolijo */
 }
 
 .nav-tabs a:hover {
     background-color: #004080; /* Color de fondo al pasar el ratón */
+    border-color: #0056b3; /* Cambio de borde al pasar el ratón */
 }
 
 .content {
     text-align: center;
     padding: 50px 20px;
 }
-
