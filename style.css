@@ -12,7 +12,7 @@ header {
 
 .logo-left,
 .logo-right {
-    width: 120px; /* Tamaño de los logos ajustado a un tamaño medio */
+    width: 80px; /* Tamaño de los logos ajustado a un tamaño medio */
     height: auto;
     margin: 5px;
 }
