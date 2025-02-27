@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociedad de Bomberos Voluntarios Pergamino</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo de estilos -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="https://bnz07pap001files.storage.live.com/y4ml2OuMJRIb1fjpNEmXaWCeiM8RK67NWMDFvzvDTcZKfyHsHIgzMzyAknaL_fisuf3EtUfqCRIdfusyaIaBnsdd_UNr_rSlEv1zuSRWKY-X8PltTtpVgjPiTvh_KtU2c439JpeZry2tDepAdVPDdESbrfO46tklMC8FiFudGL3cUHWHyAnSXbt7nRuYCkV2KGiC2QGJvok1oIMEbkC4DNSbZnpnspe1PvfdlibPgq-4hA?encodeFailures=1&width=188&height=188" 
+            class="logo-left">
+            <div class="title-container">
+                <h1>SOCIEDAD DE BOMBEROS VOLUNTARIOS PERGAMINO</h1>
+                <p class="descripcion">Castelli 1231, (B2700CPM) Pergamino, Argentina |TEL: +54 02477 438000 | N° de emergencia: 100</p>
+            </div>
+            <img src="https://www.fedbonaerense.org.ar/wp-content/uploads/2024/02/logo-180-2.png" class="logo-right">
+        </div>
+    </header>
+
+    <!-- Barra de navegación con pestañas -->
+    <nav class="navbar">
+        <ul class="nav-tabs">
+            <li><a href="URL1">Guardia Mensual</a></li>
+            <li><a href="URL2">Jefatura</a></li> <!-- Nueva pestaña "Jefatura" -->
+            <li><a href="URL3">Mejora Continua</a></li>
+            <li><a href="URL4">Equipamiento</a></li>
+            <li><a href="URL5">Formación Profesional</a></li>
+        </ul>
+    </nav>
+
+    <div class="section-container">
+        <h2 class="section-title">Jefatura</h2>
+        <div class="iframe-container">
+            <iframe id="tablero" src="https://lookerstudio.google.com/embed/reporting/f9390cab-6879-443f-852f-186131e42821" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function ajustarIframe() {
+            let iframe = document.getElementById("tablero");
+            let screenWidth = window.innerWidth;
+            let screenHeight = window.innerHeight;
+
+            // Tamaño ideal del tablero (ajústalo si es necesario)
+            let tableroAncho = 2500; // Ancho del tablero original
+            let tableroAlto = 1900;  // Alto del tablero original
+
+            // Escalar el tablero si es más grande que la pantalla
+            let escalaAncho = screenWidth / tableroAncho;
+            let escalaAlto = screenHeight / tableroAlto;
+            let escalaFinal = Math.min(escalaAncho, escalaAlto, 1); // No permitir que sea mayor a 100%
+
+            // Aplicar tamaño dinámico
+            iframe.style.width = `${tableroAncho * escalaFinal}px`;
+            iframe.style.height = `${tableroAlto * escalaFinal}px`;
+            iframe.style.transform = `scale(${escalaFinal})`;
+            iframe.style.transformOrigin = "top center";
+        }
+
+        // Ajustar cuando la página carga y al redimensionar la ventana
+        window.onload = ajustarIframe;
+        window.onresize = ajustarIframe;
+    </script>
+
+</body>
+</html>
+
+              
