@@ -12,7 +12,7 @@ header {
 
 .logo-left,
 .logo-right {
-    width: 50px; /* Reducir tamaño de los logos */
+    width: 150px; /* Reducir tamaño de los logos */
     height: auto;
     margin: 5px;
 }
