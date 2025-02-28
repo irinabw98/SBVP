@@ -1,13 +1,11 @@
-<script>
-    function showIframe(url) {
-        // Cambiar la fuente del iframe al enlace que se pasa como parámetro
-        document.getElementById('iframe-display').src = url;
-        document.getElementById('iframe-container').style.display = 'block'; // Mostrar el iframe
-    }
+// Función para cargar el link en el iframe
+function cargarLink(url) {
+    const iframe = document.getElementById('iframe-link');
+    const container = document.getElementById('link-container');
 
-    function closeIframe() {
-        // Cerrar el iframe
-        document.getElementById('iframe-container').style.display = 'none';
-        document.getElementById('iframe-display').src = ''; // Limpiar la URL para detener el contenido
-    }
-</script>
+    // Establecer el enlace en el iframe
+    iframe.src = url;
+
+    // Mostrar el contenedor
+    container.classList.add('active');
+}
