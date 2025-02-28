@@ -120,54 +120,36 @@ body::after {
 }
 
 /* Estilo del calendario */
-.calendar {
-    display: flex;
-    justify-content: space-between; /* Espacio entre los días */
-    margin-bottom: 20px;
-}
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); /* Crear una columna para cada día de la semana */
+        gap: 10px;
+        text-align: center;
+    }
 
-/* Estilo de cada día */
-.day {
-    flex: 1; /* Hace que cada día ocupe un espacio igual */
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    margin: 0 10px; /* Espacio entre los días */
-}
+    .day {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
 
-/* Estilo de los botones del calendario */
-.calendar-button {
-    margin-top: 5px;
-    padding: 8px 15px;
-    background-color: #00274D;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    width: 100%;
-}
+    .calendar-button {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: #00274D;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        width: 100%;
+    }
 
-/* Hover para el botón */
-.calendar-button:hover {
-    background-color: #003366;
-}
+    .calendar-button:hover {
+        background-color: #003366;
+    }
 
-/* Estilo para los títulos de los días */
-h3 {
-    margin: 10px 0;
-}
-
-/* Estilo del contenedor de iframe */
-#iframe-container {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#iframe-display {
-    width: 100%;
-    height: 600px;
-    border: none;
-}
+    h3 {
+        margin: 10px 0;
+    }
