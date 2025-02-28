@@ -60,47 +60,53 @@
     <p>Detalles sobre equipamiento...</p>
 
       <!-- Calendario -->
-    <div class="calendar">
-        <div class="day">
-            <h3>Lunes</h3>
-            <a href="https://form.jotform.com/232326047073652" target="_blank">
-                <button class="calendar-button">CONTROL DE ERA</button></a>
-            <button class="calendar-button">Móvil N°12</button>
-            <button class="calendar-button">Móvil N°6</button>
-            <button class="calendar-button">Móvil N°7</button>
-        </div>
-        <div class="day">
-            <h3>Martes</h3>
-            <a href="https://form.jotform.com/232326047073652" target="_blank">
-                <button class="calendar-button">CONTROL DE ERA</button></a>
-        </div>
-        <div class="day">
-            <h3>Miércoles</h3>
-            <a href="https://form.jotform.com/232326047073652" target="_blank">
-                <button class="calendar-button">CONTROL DE ERA</button></a>
-        </div>
-        <div class="day">
-            <h3>Jueves</h3>
-            <a href="https://form.jotform.com/232326047073652" target="_blank">
-                <button class="calendar-button">CONTROL DE ERA</button></a>
-        </div>
-        <div class="day">
-            <h3>Viernes</h3>
-            <a href="https://form.jotform.com/232326047073652" target="_blank">
-                <button class="calendar-button">CONTROL DE ERA</button></a>
-        </div>
-        <div class="day">
-            <h3>Sábado</h3>
-            <a href="https://form.jotform.com/232326047073652" target="_blank">
-                <button class="calendar-button">CONTROL DE ERA</button></a>
-        </div>
-        <div class="day">
-            <h3>Domingo</h3>
-            <a href="https://form.jotform.com/232326047073652" target="_blank">
-                <button class="calendar-button">CONTROL DE ERA</button></a>
+   <div class="section-container">
+        <div id="equipamiento" class="tab-content" style="display: none;">
+            <h2>Equipamiento</h2>
+            <p>Detalles sobre equipamiento...</p>
+
+            <!-- Calendario -->
+            <div class="calendar">
+                <div class="day">
+                    <h3>Lunes</h3>
+                    <button class="calendar-button" onclick="cargarLink('https://form.jotform.com/232326047073652')">CONTROL DE ERA</button>
+                    <button class="calendar-button" onclick="cargarLink('https://link-a-movil12.com')">Móvil N°12</button>
+                    <button class="calendar-button" onclick="cargarLink('https://link-a-movil6.com')">Móvil N°6</button>
+                    <button class="calendar-button" onclick="cargarLink('https://link-a-movil7.com')">Móvil N°7</button>
+                </div>
+                <div class="day">
+                    <h3>Martes</h3>
+                    <button class="calendar-button" onclick="cargarLink('https://form.jotform.com/232326047073652')">CONTROL DE ERA</button>
+                </div>
+                <div class="day">
+                    <h3>Miércoles</h3>
+                    <button class="calendar-button" onclick="cargarLink('https://form.jotform.com/232326047073652')">CONTROL DE ERA</button>
+                </div>
+                <div class="day">
+                    <h3>Jueves</h3>
+                    <button class="calendar-button" onclick="cargarLink('https://form.jotform.com/232326047073652')">CONTROL DE ERA</button>
+                </div>
+                <div class="day">
+                    <h3>Viernes</h3>
+                    <button class="calendar-button" onclick="cargarLink('https://form.jotform.com/232326047073652')">CONTROL DE ERA</button>
+                </div>
+                <div class="day">
+                    <h3>Sábado</h3>
+                    <button class="calendar-button" onclick="cargarLink('https://form.jotform.com/232326047073652')">CONTROL DE ERA</button>
+                </div>
+                <div class="day">
+                    <h3>Domingo</h3>
+                    <button class="calendar-button" onclick="cargarLink('https://form.jotform.com/232326047073652')">CONTROL DE ERA</button>
+                </div>
+            </div>
+
+            <!-- Contenedor para mostrar el link -->
+            <div id="link-container" class="link-container">
+                <iframe id="iframe-link" src="" style="width: 100%; height: 500px; border: none;"></iframe>
+            </div>
         </div>
     </div>
-</div>
+
     <div id="formacion" class="tab-content" style="display: none;">
             <h2>Formación Profesional</h2>
             <p>Material de formación profesional...</p>
