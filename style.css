@@ -78,14 +78,19 @@ body::after {
 
 .navbar {
     background-color: #00274D; /* Barra azul oscuro */
-    padding: 1px 0; /* Barra azul más angosta */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Asegura que las pestañas estén bien centradas */
+    height: auto; /* Altura automática según el contenido */
 }
 
 .nav-tabs {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center; /* Alinea las pestañas verticalmente */
+    padding: 8px;
+    margin: 0;
 }
 
 .nav-tabs li {
@@ -95,12 +100,12 @@ body::after {
 .nav-tabs a {
     text-decoration: none;
     color: white;
-    padding: 2px 2px; /* Tamaño moderado de las pestañas */
+    padding: 5px 10px; /* Ajuste del tamaño de las pestañas */
     background-color: #003366; /* Fondo de las pestañas */
     border-radius: 5px; /* Bordes más suaves */
-    font-size: 12px; /* Tamaño de la fuente ajustado */
+    font-size: 14px; /* Tamaño de la fuente ajustado */
     transition: 0.3s;
-    border: 2px solid #00274D; /* Borde alrededor de cada pestaña */
+    border: 0px solid #00274D; /* Borde alrededor de cada pestaña */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para darle un toque prolijo */
 }
 
