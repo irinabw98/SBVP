@@ -121,7 +121,7 @@ body::after {
 
 .calendar {
         display: grid;
-        grid-template-columns: repeat(7, 1fr); /* Crear una columna para cada día de la semana */
+        grid-template-columns: 1fr; /* Solo una columna para el lunes */
         gap: 10px;
         text-align: center;
     }
@@ -152,4 +152,3 @@ body::after {
     h3 {
         margin: 10px 0;
     }
-</style>
