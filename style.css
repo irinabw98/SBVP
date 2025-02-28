@@ -119,7 +119,7 @@ body::after {
     padding: 20px 5px;
 }
 
-.calendar {
+ .calendar {
         display: grid;
         grid-template-columns: 1fr; /* Solo una columna para el lunes */
         gap: 10px;
